@@ -10,7 +10,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Menu Note">
         <meta name="twitter:description" content="Quick note taking in your menu bar">
-        <meta name="twitter:image" content="https://raw.githubusercontent.com/MenuNote/menunote/main/data/embed.png">
+        <meta name="twitter:image" content="https://menunote.app/assets/embed.png">
 
         <link rel="stylesheet" href="assets/style.css">
         <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
@@ -19,51 +19,50 @@
     <body class="body">
         <div class="container py-5 my-5">
             <center>
-                <img src="assets/icon.png" id="logo">
-                <h1 class="fw-bold" id="title">Menu Note</h1>
-                <h5 class="text-grey" id="moto">Quick note taking in your menu bar</h5>
+                <div>
+                    <h1 class="fw-bold" id="title">Menu Note</h1>
+                    <h5 class="text-grey" id="moto">Quick note taking in your menu bar</h5>
 
-                <img src="assets/screen-light.png" id="screen" class="mt-5">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <img src="assets/screenshot.png" class="my-5 img-fluid">
 
-                <div id="features">
-                    <div class="row py-5">
-                        <div class="col-lg-3">
+                            <div class="section features-wrapper mt-5">
+                                <div>
+                                    <i class="fa-brands fa-github fa-2x m-3 feature-icon"></i>
+                                    <h5>Open Source</h5>
+                                    <p class="text-grey feature-text">Menu Note is open source and available on <a href="https://github.com/MenuNote">GitHub</a>.</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-wind fa-2x m-3 feature-icon"></i>
+                                    <h5>Easy To Use</h5>
+                                    <p class="text-grey feature-text">Menu Note is easy to use and has a simple interface.</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-note-sticky fa-2x m-3 feature-icon"></i>
+                                    <h5>Always There</h5>
+                                    <p class="text-grey feature-text">Notes made with Menu Note will always be visable.</p>
+                                </div>
+                            </div>
 
+                            <div class="section mt-3" id="download-section">
+                                <div class="download-wrapper">  
+                                    <div style="display: flex; justify-content: center; align-items: center;">
+                                        <img src="assets/icon.png" class="img-fluid" style="height: 100px;">
+                                        <div style="text-align: left; margin-left: 15px;">
+                                            <h3 class="fw-bold" id="title">Menu Note <span id="release-version"></span></h3>
+                                            <p class="text-grey p-0 m-0">MenuNote requires macOS 11.0 or newer.</p>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: right;" class="download-btn-wrapper">
+                                        <a id="download-btn" type="button" class="custom-btn mb-3 h-100" style="display: flex; align-items: center; justify-content: center;" href="https://github.com/MenuNote/menunote/releases/latest/download/Menu.Note.zip">Download</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-12 col-lg-2">
-                            <center>
-                                <i class="fa-brands fa-github fa-2x m-3 feature-icon"></i>
-                                <h5>Open Source</h5>
-                                <p class="text-grey feature-text">
-                                    Menu Note is open source and available on <a href="https://github.com/MenuNote">GitHub</a>.
-                                </p>
-                            </center>
-                        </div>
-                        <div class="col-md-12 col-lg-2">
-                           <center>
-                                <i class="fa-solid fa-wind fa-2x m-3 feature-icon"></i>
-                                <h5>Easy To Use</h5>
-                                <p class="text-grey feature-text">
-                                    Menu Note is easy to use and has a simple interface.
-                                </p>
-                            </center>
-                        </div>
-                        <div class="col-md-12 col-lg-2">
-                           <center>
-                                <i class="fa-solid fa-note-sticky fa-2x m-3 feature-icon"></i>
-                                <h5>Always There</h5>
-                                <p class="text-grey feature-text">
-                                    Notes made with Menu Note will always be visable.
-                                </p>
-                            </center>
-                        </div>
-                        
+                        <div class="col-md-2"></div>
                     </div>
-                </div>
-
-                <div class="py-2">
-                    <a type="button" class="custom-btn m-3" href="https://github.com/MenuNote/menunote/releases/latest/download/Menu.Note.zip">Download for free</a>
-                    <p class="mt-0 text-grey">Menu Note requires Mac OS 11 or higher.</p>
                 </div>
             </center>
         </div>
@@ -71,12 +70,12 @@
         <div class="container pb-2">
             <center>
                 <div id="footer">
-                    <p class="text-grey">&copy; 2022 <a href="https://benny.fun/">Ben Tettmar</a> - Website design based off <a href="https://topnotch.app/">topnotch.app</a></p>
+                    <p class="text-grey">&copy; 2022 &mdash; <a href="https://benny.fun/">Ben Tettmar</a></p>
                 </div>
             </center>
         </div>
         
-        <!-- <script src="assets/script.js"></script> -->
+        <script src="assets/script.js"></script>
         <script src="https://kit.fontawesome.com/bbd7036ee1.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>

@@ -1,15 +1,18 @@
-const screen_img = document.getElementById("screen");
+const apiLink = "https://api.github.com/repos/menunote/menunote/releases/latest";
+const versionSpan = document.getElementById("release-version");
 
-function loop() {
-    const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+const downloadBtn = document.getElementById("download-btn");
+const downloadSection = document.getElementById("download-section");
 
-    if (darkThemeMq.matches) {
-        screen_img.src = "assets/screen-dark.png"
-    } else {
-        screen_img.src = "assets/screen-light.png"
+fetch(apiLink).then(response => response.json()).then(data => {
+    versionSpan.innerHTML = "v" + data.tag_name;
+});
+
+function checkMac() {
+    if (navigator.platform.indexOf("Mac") === -1) {
+        downloadBtn.classList.add("faded");
+        downloadSection.classList.add("faded");
     }
-
-    setTimeout(loop, 1000);
 }
 
-loop();
+checkMac();

@@ -13,7 +13,7 @@
     font-size: 18pt;
     border: none;
     font-weight: bold;
-    border-radius: 100px;
+    border-radius: 15px;
     background-color: #F2BF80;
     color: white!important;
     text-decoration: none;
@@ -42,21 +42,49 @@
     width: 20ch;
 }
 
+.features-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.download-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section {
+    background-color: #e5ebed;
+    padding: 1.5em;
+    border-radius: 15px;
+}
+
+.faded {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+}
+
+#download-btn {
+    padding: 0px 50px;
+}
+
 #logo {
     width: 150px;
     height: 150px;
 }
 
-#screen {
-    display: block;
-    max-width:1100px;
-    max-height:450px;
-    width: auto;
-    height: auto;
-}
-
 #moto {
     width: 25ch;
+}
+
+#release-version {
+    font-weight: normal;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 425px) {
@@ -65,9 +93,13 @@
     }
 }
 
-@media screen and (max-width: 1100px) {
-    #screen {
-        max-width:100%;
-        max-height:100%;
+@media screen and (max-width: 1200px) {
+    .download-btn-wrapper {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    #download-btn {
+        padding: 10px;
     }
 }
